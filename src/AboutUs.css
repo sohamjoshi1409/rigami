@@ -1,0 +1,147 @@
+/* About Us Page Styling */
+
+.about-us-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 1200px;
+}
+
+.hero-section {
+  background-image: url('/image.jpg'); /* Set the background image */
+  background-size: cover; /* Ensures the image covers the entire width and height */
+  background-position: center center; /* Center the image */
+  height: 400px; /* Set a fixed height for the hero section */
+  width: 100%; /* Ensure it spans the full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative; /* To position child elements inside */
+  padding: 20px;
+  box-sizing: border-box; /* Prevent padding from affecting width */
+  border-radius: 30px;
+}
+
+
+
+.hero-text {
+  background-color: rgba(255, 255, 255, 0.4); /* Optional: Add a dark overlay for text contrast */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: black;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.content-left {
+  flex: 1;
+}
+
+.about-us-image {
+  display: none; /* Hide the image */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-us-section {
+  background-color: #f7f7f7;
+  padding: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #3498db;
+  margin-right: 15px;
+}
+
+.cta-section {
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  padding: 50px 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-text {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: white;
+  color: #3498db;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+  }
+}

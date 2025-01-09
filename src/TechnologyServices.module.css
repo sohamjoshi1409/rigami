@@ -1,0 +1,178 @@
+/* Hero Section */
+.hero {
+  width: 100vw;
+  height: 90vh; /* Adjusted height */
+  background: url('/tech.jpg') no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Ensure no overflow issues */
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
+  pointer-events: none; /* Prevent overlay from blocking clicks */
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for text */
+  padding: 3rem 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #001f3f;
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #001f3f;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-in;
+}
+
+/* Carousel Section */
+.offerings {
+  width: 100vw;
+  background: #f8f9fa;
+  color: #343a40;
+  padding: 4rem 2rem;
+}
+
+.offerings h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #001f3f; /* Dark blue for headings */
+}
+
+.carousel {
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselItem {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  width: 80%;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.carouselItem h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0074d9;
+  animation: scaleUp 1s ease-in-out;
+}
+
+.carouselItem p {
+  font-size: 1.2rem;
+}
+
+.carouselItem.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  z-index: 2;
+}
+
+/* Call to Action Section */
+.cta {
+  width: 100vw;
+  padding: 4rem 0;
+  background: #1976d2;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta button {
+  padding: 0.8rem 2rem;
+  background: #343a40;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  background: white;
+  color: #343a40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for Animations */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

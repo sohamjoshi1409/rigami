@@ -1,0 +1,82 @@
+@keyframes fadeInSub {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(249,249,249,0.65);
+    padding: 70px 20px;
+    border-radius: 10px;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    color: black !important ;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInSub 1s ease-in;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden; /* Hide the slides that are out of view */
+  }
+  
+  .carousel-content {
+    display: flex;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Each slide takes up 100% of the container's width */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: maroon;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #4CAF50; /* Active dot color */
+  }
+  
