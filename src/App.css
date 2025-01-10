@@ -135,6 +135,18 @@ body, html, #root {
 }
 
 /* Main Content Styles */
+
+.homepage-content {
+  background: url('/home.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire container */
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Ensure background is below navbar */
+  position: relative;
+}
+
 .content {
   flex: 1; /* Take up remaining space */
   display: flex;
