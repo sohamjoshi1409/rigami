@@ -146,12 +146,6 @@ body, html, #root {
   width: 100%; /* Full width */
 }
 
-.homepage-content {
-  background: url('./home.jpg') no-repeat center center;
-  background-size: cover; /* Ensure the image covers the container */
-  background-attachment: fixed; /* Optional: creates a parallax effect */
-}
-
 .content h1 {
   font-size: 2.5rem;
   color: #2e7d32; /* Dark green shade */
