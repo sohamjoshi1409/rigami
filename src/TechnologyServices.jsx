@@ -21,7 +21,7 @@ function TechnologyServices() {
     },
     {
       title: "Project and Program Management",
-      description: "Robust protection against evolving digital threats.",
+      description: "Driving seamless execution and delivering results through expert project and program management tailored to your business goals.",
     },
     {
       title: "Managed IT Services",

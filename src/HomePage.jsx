@@ -32,6 +32,7 @@ function Home() {
   return (
     <div className="home-page">
       <h1 className="home-title">Welcome to RiGaMi Consultancy</h1>
+      <p> A dynamic startup IT consultancy dedicated to empowering businesses through innovative technology solutions. We specialize in staffing services, providing strategic guidance, cutting-edge technology implementation, and tailored IT solutions to help businesses of all sizes thrive in today’s digital landscape. </p>
       <div className="carousel-container">
         <div className="carousel-content">
           <div

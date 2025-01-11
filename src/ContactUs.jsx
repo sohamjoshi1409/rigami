@@ -66,6 +66,14 @@ function ContactUs() {
             <a href="https://www.linkedin.com/in/rigami-consultancy-050338337/"> <u>LinkedIn</u> </a>
           </p>
         </div>
+
+        <div className="contact-item bounce-in">
+          <i className="fas fa-map-marker-alt contact-icon"></i>
+          <h3 className="contact-item-title">Office</h3>
+          <p className="contact-detail">
+            Sinhagad Road, Pune - 411041
+          </p>
+        </div>
       </section>
 
       {/* FAQ Section */}

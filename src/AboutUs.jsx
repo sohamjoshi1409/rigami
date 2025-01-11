@@ -17,8 +17,7 @@ function AboutUs() {
         <div className="hero-text">
           <h1 className="hero-title">About RiGaMi Consultancy</h1>
           <p className="hero-description">
-            With over 30 years of combined rich experience, <br />
-            RiGaMi is a leading IT consultancy based in Pune, India.
+          We are a team of passionate technology experts committed to solving complex challenges and driving digital transformation. With a focus on innovation, agility, and client success, we aim to bridge the gap between business needs and technology solutions.
           </p>
         </div>
       </section>
