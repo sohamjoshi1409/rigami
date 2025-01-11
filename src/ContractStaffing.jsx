@@ -69,9 +69,11 @@ function ContractStaffing() {
           <p>Let us help you streamline your hiring process and connect you with the right talent for your needs.</p>
         </div>
         <div className={styles.contractCtaButtonWrapper}>
-          <button className={styles.contractCtaButton} onClick={handleContactUsClick}>
-            Contact Us
-          </button>
+          <a href="/contact">
+            <button className={styles.contractCtaButton}>
+              Contact Us
+            </button>
+          </a>
         </div>
       </section>
     </div>

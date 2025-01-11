@@ -3,13 +3,6 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import "./RecruitmentOutsourcing.css";
 
 function RecruitmentOutsourcing() {
-  const navigate = useNavigate(); // Initialize navigate for navigation
-
-  // Function to handle the "Contact Us" button click
-  const handleContactUsClick = () => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
-    navigate("/contact"); // Programmatically navigate to the Contact Us page
-  };
 
   return (
     <div className="recruitment-page">
@@ -86,9 +79,11 @@ function RecruitmentOutsourcing() {
           </div>
           <div className="cta-button-wrapper animate-zoom">
             {/* Updated to use regular button for navigation */}
-            <button className="cta-button" onClick={handleContactUsClick}>
-              Contact Us
-            </button>
+            <a href="/contact">
+              <button className="cta-button">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
       </section>

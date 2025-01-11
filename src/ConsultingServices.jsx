@@ -19,7 +19,7 @@ function ConsultingServices() {
       {/* Content Section */}
       <section className={styles.content}>
         <p className={styles.fadeInContent}>
-          Our Management Consulting Services empower organizations to overcome challenges, optimize operations, and achieve sustainable growth. 
+          Our Management Consulting Services empower organizations to overcome challenges, optimize operations, and achieve sustainable growth.
           We collaborate with you to identify opportunities, streamline processes, and implement effective strategies that align with your business objectives.
         </p>
 
@@ -43,9 +43,11 @@ function ConsultingServices() {
       <section className={styles.cta}>
         <h2>Transform Your Business</h2>
         <p>Contact us to discover how our management consulting services can transform your business.</p>
-        <button className={styles.ctaButton} onClick={() => navigate("/contact")}>
-          Contact Us
-        </button>
+        <a href="/contact">
+          <button className={styles.ctaButton}>
+            Contact Us
+          </button>
+        </a>
       </section>
     </div>
   );

@@ -59,9 +59,8 @@ function TechnologyServices() {
           {offerings.map((offering, index) => (
             <div
               key={index}
-              className={`${styles.carouselItem} ${
-                index === currentIndex ? styles.active : ""
-              }`}
+              className={`${styles.carouselItem} ${index === currentIndex ? styles.active : ""
+                }`}
             >
               <h3 className={styles.scaleUp}>{offering.title}</h3>
               <p>{offering.description}</p>
@@ -77,12 +76,13 @@ function TechnologyServices() {
           Partner with us to leverage cutting-edge technology and achieve
           unparalleled growth.
         </p>
-        <button
-          className={`${styles.ctaButton} ${styles.bounce}`}
-          onClick={handleContactUsClick}
-        >
-          Contact Us
-        </button>
+        <a href="/contact">
+          <button
+            className={`${styles.ctaButton} ${styles.bounce}`}
+          >
+            Contact Us
+          </button>
+        </a>
       </section>
     </div>
   );

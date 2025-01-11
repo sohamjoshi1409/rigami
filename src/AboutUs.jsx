@@ -79,9 +79,9 @@ function AboutUs() {
           business growth. With RiGaMi
         </p>
         {/* Link to the Contact Us page */}
-        <Link to="/contact" onClick={handleScrollToTop}>
+        <a href="/contact" onClick={handleScrollToTop}>
           <button className="cta-button">Contact Us</button>
-        </Link>
+        </a>
       </section>
     </div>
   );
