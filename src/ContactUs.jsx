@@ -75,32 +75,6 @@ function ContactUs() {
           </p>
         </div>
       </section>
-
-      {/* FAQ Section */}
-      <section className="faq-section">
-        <h2 className="faq-title">Frequently Asked Questions</h2>
-        <div className="faq-items">
-          {faqData.map((item, index) => (
-            <div
-              key={index}
-              className={`faq-item ${activeQuestion === index ? "active" : ""}`}
-              onClick={() => toggleQuestion(index)}
-            >
-              <div className="faq-question">
-                <span>{item.question}</span>
-                <i
-                  className={`fas ${
-                    activeQuestion === index ? "fa-minus" : "fa-plus"
-                  }`}
-                ></i>
-              </div>
-              {activeQuestion === index && (
-                <div className="faq-answer">{item.answer}</div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   );
 }
