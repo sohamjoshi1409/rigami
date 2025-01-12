@@ -114,8 +114,8 @@ function App() {
         </Routes>
         <div className="footer-marquee">
           <span>
-            Simplify to Multiply. Simplify your processes to multiply your
-            business growth. With RiGaMi
+            Simplify to Multiply! Simplify your processes to multiply your
+            business growth with <b> RiGaMi </b>
           </span>
         </div>
       </main>
